@@ -3,7 +3,9 @@
 # @Author    : yu
 # @Email     : 
 # @File      : run.py
-
+import sys
+print(sys.path)
+sys.path.append('./')
 import unittest
 from api_5.test_case import test_register
 from api_5.test_case import test_login
