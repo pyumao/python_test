@@ -98,4 +98,4 @@ if __name__ == '__main__':
     test_data = DoExcel(file_name, sheet_name).read_data('CaseRegister')
     print(type(test_data))
     print(type(test_data[1]['CaseId']))
-
+    print(test_data)

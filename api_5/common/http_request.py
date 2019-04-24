@@ -9,7 +9,7 @@ import requests
 class HttpRequest:
     # '''该类完成http的get或post请求'''
 
-    def http_request(self,method,url,param,cookies):
+    def http_request(self,method,url,param=None,cookies=None):
         # '''根究请求方法发起get或post请求
         #     url：请求地址
         #     param：以字典格式存储请求参数
@@ -36,8 +36,10 @@ class HttpRequest:
 
 if __name__ == '__main__':
     method = 'GET'
-    url = 'http://test.lemonban.com/futureloan/mvc/api/member/register'  # 接口地址
+    url = 'http://test.lemonban.com/futureloan/mvc/api//loan/getLoanList'  # 接口地址
     param = {'mobilephone': '18307217225', 'pwd': '123456'}  # 字典形式存储数据
 
-    resp=HttpRequest().http_request(method,url,param)
+    resp=HttpRequest().http_request(method,url)
     print(resp)
+    print(str(resp))
+    print(type(str(resp)))

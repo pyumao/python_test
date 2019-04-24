@@ -36,8 +36,14 @@ class TestCases(unittest.TestCase):
         # param = eval(case['Params'])  # 获取请求参数
         param=eval(get_data.replace(case['Params']))
         # print(param)
+        case['ExpectedResult']=get_data.replace(case['ExpectedResult'])
         if case['SQL'] != None:
             sql = get_data.replace(case['SQL'])
+
+        if case['CaseId'] ==1:
+            query=eval(sql)['sql']  #获取sql语句
+            id=DoMySql().do_mysql(query,1)[0]
+            setattr(GetData,'id',str(id))
         logger.info('---正在测试{}模块，第{}条测试用例，测试标题:{}---'.format(case['Module'], case['CaseId'], case['Title']))
         logger.info('测试数据是{}'.format(case))
 
@@ -60,6 +66,7 @@ class TestCases(unittest.TestCase):
                 print(after_leaveamount)
                 expect_leaveamount = before_leaveamount + int(param['amount'])
                 self.assertEqual(after_leaveamount,expect_leaveamount)
+                print(expect_leaveamount)
             if case['ExpectedResult'].find('expect_amount')!=-1:
                 case['ExpectedResult']=case['ExpectedResult'].replace('expect_amount',str(expect_leaveamount))
                 self.assertEqual(eval(case['ExpectedResult']),resp.json())

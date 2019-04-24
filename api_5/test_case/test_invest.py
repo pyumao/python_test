@@ -33,6 +33,12 @@ class TestCases(unittest.TestCase):
         method = case['Method']  # 获取请求方法
         url = case['URL']  # 获取请求地址
         # param = eval(case['Params'])  # 获取请求参数
+
+        # t=case['SQL']
+        # if case['CaseId']==1:
+        #     # print(eval(t)['sql2'])
+        #     loanid=DoMySql().do_mysql(eval(t)['sql2'],1)
+        #     print(loanid)
         param=eval(get_data.replace(case['Params']))
         # print(param)
         if case['SQL']!=None:
@@ -41,26 +47,34 @@ class TestCases(unittest.TestCase):
         logger.info('---正在测试{}模块，第{}条测试用例，测试标题:{}---'.format(case['Module'], case['CaseId'], case['Title']))
         logger.info('测试数据是{}'.format(case))
 
+
+        if case['CaseId']==2:
+            query = eval(sql)['sql']  # 获取sql语句11   11
+            before_leaveamount = DoMySql().do_mysql(query, 1)[0]  # 操作数据库 获取项目id值 获取的是个元组  取出元组元素
+            print(before_leaveamount)
+
+
+        resp = HttpRequest().http_request(method, url, param,cookies=getattr(GetData,'cookies'))
+
         if case['CaseId'] == 1:
             query = eval(sql)['sql']  # 获取sql语句
             id = DoMySql().do_mysql(query, 1)[0]  # 操作数据库 获取项目id值 获取的是个元组  取出元组元素
             setattr(GetData, 'normal_memberid', str(id))  # 动态获取项目id值
             print(id)
-        if case['SQL']==2:
-            query = eval(sql)['sql']  # 获取sql语句
-            before_leaveamount = DoMySql().do_mysql(query, 1)[0]  # 操作数据库 获取项目id值 获取的是个元组  取出元组元素
-            print(before_leaveamount)
-
-        resp = HttpRequest().http_request(method, url, param,cookies=getattr(GetData,'cookies'))
-
+        if case['CaseId']==1:
+            query=eval(sql)['sql2']  #获取sql语句
+            loan_id=DoMySql().do_mysql(query,1)[0]  #操作数据库 获取项目id值 获取的是个元组  取出元组元素
+            setattr(GetData,'loan_id',str(loan_id))  #动态获取项目id值
+            print(loan_id)
+        #
 
         if resp.cookies:
             setattr(GetData,'cookies',resp.cookies)
-        #
-        # if case['SQL'] != None:
-        #     query = eval(case['SQL'])['sql']
-        #     after_leaveamount = DoMySql().do_mysql(query, 1)[0]
-        #     print(after_leaveamount)
+
+        if case['CaseId'] == 2:
+            query = eval(sql)['sql']
+            after_leaveamount = DoMySql().do_mysql(query, 1)[0]
+            print(after_leaveamount)
 
         try:
             if case['SQL'] == 2:

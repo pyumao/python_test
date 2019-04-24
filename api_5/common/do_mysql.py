@@ -39,7 +39,7 @@ class DoMySql:
         return res
 
 if __name__ == '__main__':
-    query = 'select LeaveAmount from member where MobilePhone=18688775656'
+    query = 'select max(Id) from loan where MemberId=1048'
     res=DoMySql().do_mysql(query,1)
     print(type(res))
     print('数据库查询结果是{}'.format(res))
