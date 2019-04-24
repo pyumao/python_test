@@ -1,0 +1,12 @@
+this is a info
+this is a warning
+this is a error
+this is a cretical
+this is a info
+this is a warning
+this is a error
+this is a cretical
+2019-03-25 19:39:37,029-INFO-logging模块.py-python-日志信息：this is a info
+2019-03-25 19:39:37,029-WARNING-logging模块.py-python-日志信息：this is a warning
+2019-03-25 19:39:37,029-ERROR-logging模块.py-python-日志信息：this is a error
+2019-03-25 19:39:37,029-CRITICAL-logging模块.py-python-日志信息：this is a cretical

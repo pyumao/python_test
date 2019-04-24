@@ -1,0 +1,36 @@
+[2019-04-18 21:11:22,382]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试register模块，第1条测试用例，测试标题:正常注册---
+[2019-04-18 21:11:22,384]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Method': 'get', 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'注册成功'}", 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '正常注册', 'CaseId': 1, 'Module': 'register', 'Params': "{'mobilephone':'18307217376','pwd':'123456'}"}
+[2019-04-18 21:11:22,562]-[ERROR]-[my_log.py]-[python1]-[日志信息]：请求错误，错误是{'status': 1, 'data': None, 'code': '10001', 'msg': '注册成功'} != {'status': 0, 'data': None, 'code': '20110', 'msg': '手机号码已被注册'}
+- {'code': '10001', 'data': None, 'msg': '注册成功', 'status': 1}
+?             ---                           --             ^
+
++ {'code': '20110', 'data': None, 'msg': '手机号码已被注册', 'status': 0}
+?           +++                           ++++++               ^
+
+[2019-04-18 21:11:22,695]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试register模块，第2条测试用例，测试标题:密码为空---
+[2019-04-18 21:11:22,696]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Method': 'get', 'ExpectedResult': "{'status':0,'code':'20103','data':None,'msg':'密码不能为空'}", 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '密码为空', 'CaseId': 2, 'Module': 'register', 'Params': "{'mobilephone':'18307217366','pwd':''}"}
+[2019-04-18 21:11:23,003]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 0, 'data': None, 'code': '20103', 'msg': '密码不能为空'}
+[2019-04-18 21:11:23,005]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试register模块，第3条测试用例，测试标题:账号为空---
+[2019-04-18 21:11:23,006]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Method': 'get', 'ExpectedResult': "{'status':0,'code':'20103','data':None,'msg':'手机号不能为空'}", 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '账号为空', 'CaseId': 3, 'Module': 'register', 'Params': "{'mobilephone':'','pwd':'123456'}"}
+[2019-04-18 21:11:23,293]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 0, 'data': None, 'code': '20103', 'msg': '手机号不能为空'}
+[2019-04-18 21:11:23,295]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试register模块，第4条测试用例，测试标题:密码错误---
+[2019-04-18 21:11:23,296]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Method': 'get', 'ExpectedResult': "{'status':0,'code':'20108','data':None,'msg':'密码长度必须为6~18'}", 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '密码错误', 'CaseId': 4, 'Module': 'register', 'Params': "{'mobilephone':'18307217376','pwd':'1234'}"}
+[2019-04-18 21:11:23,547]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 0, 'data': None, 'code': '20108', 'msg': '密码长度必须为6~18'}
+[2019-04-18 21:11:23,549]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试register模块，第5条测试用例，测试标题:手机号已经注册---
+[2019-04-18 21:11:23,550]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Method': 'get', 'ExpectedResult': "{'status':0,'code':'20110','data':None,'msg':'手机号码已被注册'}", 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'Title': '手机号已经注册', 'CaseId': 5, 'Module': 'register', 'Params': "{'mobilephone':'18307217255','pwd':'123456'}"}
+[2019-04-18 21:11:23,842]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 0, 'data': None, 'code': '20110', 'msg': '手机号码已被注册'}
+[2019-04-18 21:11:23,844]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第6条测试用例，测试标题:正常登录---
+[2019-04-18 21:11:23,845]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Method': 'post', 'ExpectedResult': "{'status':1,'data':None,'msg':'登录成功','code':'10001'}", 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Title': '正常登录', 'CaseId': 6, 'Module': 'login', 'Params': "{'mobilephone':'18307217255','pwd':'123456'}"}
+[2019-04-18 21:11:24,211]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 1, 'data': None, 'code': '10001', 'msg': '登录成功'}
+[2019-04-18 21:11:24,213]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第7条测试用例，测试标题:密码为空---
+[2019-04-18 21:11:24,213]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Method': 'post', 'ExpectedResult': "{'status':0,'code':'20103','data':None,'msg':'密码不能为空'}", 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Title': '密码为空', 'CaseId': 7, 'Module': 'login', 'Params': "{'mobilephone':'18307217255','pwd':''}"}
+[2019-04-18 21:11:24,539]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 0, 'data': None, 'code': '20103', 'msg': '密码不能为空'}
+[2019-04-18 21:11:24,539]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第8条测试用例，测试标题:账号为空---
+[2019-04-18 21:11:24,540]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Method': 'post', 'ExpectedResult': "{'status':0,'code':'20103','data':None,'msg':'手机号不能为空'}", 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Title': '账号为空', 'CaseId': 8, 'Module': 'login', 'Params': "{'mobilephone':'','pwd':'123456'}"}
+[2019-04-18 21:11:24,865]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 0, 'data': None, 'code': '20103', 'msg': '手机号不能为空'}
+[2019-04-18 21:11:24,867]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第9条测试用例，测试标题:密码错误---
+[2019-04-18 21:11:24,868]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Method': 'post', 'ExpectedResult': "{'status':0,'code':'20111','data':None,'msg':'用户名或密码错误'}", 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Title': '密码错误', 'CaseId': 9, 'Module': 'login', 'Params': "{'mobilephone':'18307217255','pwd':'1234567'}"}
+[2019-04-18 21:11:25,227]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 0, 'data': None, 'code': '20111', 'msg': '用户名或密码错误'}
+[2019-04-18 21:11:25,229]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第10条测试用例，测试标题:账号未注册---
+[2019-04-18 21:11:25,230]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Method': 'post', 'ExpectedResult': "{'status':0,'code':'20111','data':None,'msg':'用户名或密码错误'}", 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Title': '账号未注册', 'CaseId': 10, 'Module': 'login', 'Params': "{'mobilephone':'18307218255','pwd':'123456'}"}
+[2019-04-18 21:11:25,549]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 0, 'data': None, 'code': '20111', 'msg': '用户名或密码错误'}

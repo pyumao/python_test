@@ -1,0 +1,154 @@
+[2019-04-20 20:12:08,581]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第1条测试用例，测试标题:正常登录---
+[2019-04-20 20:12:08,584]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Title': '正常登录', 'Module': 'login', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'CaseId': 1, 'Method': 'get', 'ExpectedResult': '{"status":1,"code":"10001","data":null,"msg":"登录成功"}', 'Params': "{'mobilephone':'18688775656','pwd':'123456'}"}
+[2019-04-20 20:12:09,796]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第2条测试用例，测试标题:正常加标---
+[2019-04-20 20:12:09,798]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Title': '正常加标', 'Module': 'recharge', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'CaseId': 2, 'Method': 'get', 'ExpectedResult': '{"status":0,"code":"20105","data":null,"msg":"不存在该会员"}', 'Params': "{'memberId':'1123888','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':3,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}"}
+[2019-04-20 20:12:09,967]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第3条测试用例，测试标题:审核到状态4---
+[2019-04-20 20:12:09,970]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Title': '审核到状态4', 'Module': 'recharge', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'CaseId': 3, 'Method': 'get', 'ExpectedResult': '{"status":0,"code":"20212","data":null,"msg":"请根据数值参数的类型对应输入合法的数字"}', 'Params': "{'id':'loanid','status':4}"}
+[2019-04-20 20:19:24,752]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第1条测试用例，测试标题:正常登录---
+[2019-04-20 20:19:24,755]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Title': '正常登录', 'Method': 'get', 'Module': 'login', 'Params': "{'mobilephone':'18307217255','pwd':'123456'}", 'CaseId': 1, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"登录成功"}'}
+[2019-04-20 20:19:25,052]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'data': None, 'msg': '登录成功', 'code': '10001', 'status': 1}
+[2019-04-20 20:19:25,055]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第2条测试用例，测试标题:正常加标---
+[2019-04-20 20:19:25,056]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Title': '正常加标', 'Method': 'get', 'Module': 'recharge', 'Params': "{'memberId':'1123888','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':3,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'CaseId': 2, 'ExpectedResult': '{"status":0,"code":"20105","data":None,"msg":"不存在该会员"}'}
+[2019-04-20 20:19:25,325]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'data': None, 'msg': '不存在该会员', 'code': '20105', 'status': 0}
+[2019-04-20 20:19:25,327]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第3条测试用例，测试标题:审核到状态4---
+[2019-04-20 20:19:25,328]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Title': '审核到状态4', 'Method': 'get', 'Module': 'recharge', 'Params': "{'id':'loanid','status':4}", 'CaseId': 3, 'ExpectedResult': '{"status":0,"code":"20212","data":None,"msg":"请根据数值参数的类型对应输入合法的数字"}'}
+[2019-04-20 20:19:25,603]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'data': None, 'msg': '请根据数值参数的类型对应输入合法的数字', 'code': '20212', 'status': 0}
+[2019-04-20 20:29:01,020]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第1条测试用例，测试标题:正常登录---
+[2019-04-20 20:29:01,024]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"登录成功"}', 'Title': '正常登录', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'CaseId': 1, 'Params': "{'mobilephone':'18307217255','pwd':'123456'}", 'Module': 'login'}
+[2019-04-20 20:29:01,345]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'data': None, 'code': '10001', 'status': 1, 'msg': '登录成功'}
+[2019-04-20 20:29:01,348]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第2条测试用例，测试标题:正常加标---
+[2019-04-20 20:29:01,349]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'ExpectedResult': '{"status":0,"code":"20105","data":None,"msg":"不存在该会员"}', 'Title': '正常加标', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Method': 'get', 'CaseId': 2, 'Params': "{'memberId':'1123889','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':3,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'Module': 'recharge'}
+[2019-04-20 20:29:01,644]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'data': None, 'code': '20105', 'status': 0, 'msg': '不存在该会员'}
+[2019-04-20 20:29:01,645]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第3条测试用例，测试标题:审核到状态4---
+[2019-04-20 20:29:01,648]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'ExpectedResult': '{"status":0,"code":"20212","data":None,"msg":"请根据数值参数的类型对应输入合法的数字"}', 'Title': '审核到状态4', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Method': 'get', 'CaseId': 3, 'Params': "{'id':'loanid','status':4}", 'Module': 'recharge'}
+[2019-04-20 20:29:01,933]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'data': None, 'code': '20212', 'status': 0, 'msg': '请根据数值参数的类型对应输入合法的数字'}
+[2019-04-20 20:29:48,090]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第1条测试用例，测试标题:正常登录---
+[2019-04-20 20:29:48,092]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Params': "{'mobilephone':'18399999999','pwd':'123456'}", 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"登录成功"}', 'CaseId': 1, 'Title': '正常登录', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Module': 'login', 'Method': 'get'}
+[2019-04-20 20:29:48,256]-[ERROR]-[my_log.py]-[python1]-[日志信息]：请求错误，错误是{'code': '10001', 'msg': '登录成功', 'status': 1, 'data': None} != {'code': '20111', 'msg': '用户名或密码错误', 'status': 0, 'data': None}
+- {'code': '10001', 'data': None, 'msg': '登录成功', 'status': 1}
+?            ^^^                          ^^^^             ^
+
++ {'code': '20111', 'data': None, 'msg': '用户名或密码错误', 'status': 0}
+?           ++ ^                          ^^^^^^^^             ^
+
+[2019-04-20 20:29:48,421]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第2条测试用例，测试标题:正常加标---
+[2019-04-20 20:29:48,423]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Params': "{'memberId':'1123889','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':3,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'ExpectedResult': '{"status":0,"code":"20105","data":None,"msg":"不存在该会员"}', 'CaseId': 2, 'Title': '正常加标', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Module': 'recharge', 'Method': 'get'}
+[2019-04-20 20:29:48,595]-[ERROR]-[my_log.py]-[python1]-[日志信息]：请求错误，错误是{'code': '20105', 'msg': '不存在该会员', 'status': 0, 'data': None} != {'code': None, 'msg': '抱歉，请先登录。', 'status': 0, 'data': None}
+- {'code': '20105', 'data': None, 'msg': '不存在该会员', 'status': 0}
+?          ^^^^^^^                        ^^^^^^
+
++ {'code': None, 'data': None, 'msg': '抱歉，请先登录。', 'status': 0}
+?          ^^^^                        ^^^^^^^^
+
+[2019-04-20 20:29:48,779]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第3条测试用例，测试标题:审核到状态4---
+[2019-04-20 20:29:48,779]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Params': "{'id':'loanid','status':4}", 'ExpectedResult': '{"status":0,"code":"20212","data":None,"msg":"请根据数值参数的类型对应输入合法的数字"}', 'CaseId': 3, 'Title': '审核到状态4', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Module': 'recharge', 'Method': 'get'}
+[2019-04-20 20:29:48,980]-[ERROR]-[my_log.py]-[python1]-[日志信息]：请求错误，错误是{'code': '20212', 'msg': '请根据数值参数的类型对应输入合法的数字', 'status': 0, 'data': None} != {'code': None, 'msg': '抱歉，请先登录。', 'status': 0, 'data': None}
+- {'code': '20212', 'data': None, 'msg': '请根据数值参数的类型对应输入合法的数字', 'status': 0}
++ {'code': None, 'data': None, 'msg': '抱歉，请先登录。', 'status': 0}
+[2019-04-20 20:31:04,973]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试register模块，第1条测试用例，测试标题:正常注册---
+[2019-04-20 20:31:04,975]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'ExpectedResult': "{'status':1,'code':'10001','data':None,'msg':'注册成功'}", 'CaseId': 1, 'Title': '正常注册', 'Params': "{'mobilephone':'18399999999','pwd':'123456'}", 'Module': 'register', 'Method': 'get'}
+[2019-04-20 20:31:05,265]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 1, 'msg': '注册成功', 'data': None, 'code': '10001'}
+[2019-04-20 20:31:05,266]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试register模块，第2条测试用例，测试标题:密码为空---
+[2019-04-20 20:31:05,267]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'ExpectedResult': "{'status':0,'code':'20103','data':None,'msg':'密码不能为空'}", 'CaseId': 2, 'Title': '密码为空', 'Params': "{'mobilephone':'18307217366','pwd':''}", 'Module': 'register', 'Method': 'get'}
+[2019-04-20 20:31:05,562]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 0, 'msg': '密码不能为空', 'data': None, 'code': '20103'}
+[2019-04-20 20:31:05,564]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试register模块，第3条测试用例，测试标题:账号为空---
+[2019-04-20 20:31:05,565]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'ExpectedResult': "{'status':0,'code':'20103','data':None,'msg':'手机号不能为空'}", 'CaseId': 3, 'Title': '账号为空', 'Params': "{'mobilephone':'','pwd':'123456'}", 'Module': 'register', 'Method': 'get'}
+[2019-04-20 20:31:05,839]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 0, 'msg': '手机号不能为空', 'data': None, 'code': '20103'}
+[2019-04-20 20:31:05,841]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试register模块，第4条测试用例，测试标题:密码错误---
+[2019-04-20 20:31:05,842]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'ExpectedResult': "{'status':0,'code':'20108','data':None,'msg':'密码长度必须为6~18'}", 'CaseId': 4, 'Title': '密码错误', 'Params': "{'mobilephone':'18307217376','pwd':'1234'}", 'Module': 'register', 'Method': 'get'}
+[2019-04-20 20:31:06,113]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 0, 'msg': '密码长度必须为6~18', 'data': None, 'code': '20108'}
+[2019-04-20 20:31:06,115]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试register模块，第5条测试用例，测试标题:手机号已经注册---
+[2019-04-20 20:31:06,116]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/register', 'ExpectedResult': "{'status':0,'code':'20110','data':None,'msg':'手机号码已被注册'}", 'CaseId': 5, 'Title': '手机号已经注册', 'Params': "{'mobilephone':'18307217255','pwd':'123456'}", 'Module': 'register', 'Method': 'get'}
+[2019-04-20 20:31:06,392]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 0, 'msg': '手机号码已被注册', 'data': None, 'code': '20110'}
+[2019-04-20 20:31:15,872]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第1条测试用例，测试标题:正常登录---
+[2019-04-20 20:31:15,874]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Title': '正常登录', 'CaseId': 1, 'Params': "{'mobilephone':'18399999999','pwd':'123456'}", 'Method': 'get', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Module': 'login', 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"登录成功"}'}
+[2019-04-20 20:31:16,178]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'data': None, 'code': '10001', 'msg': '登录成功', 'status': 1}
+[2019-04-20 20:31:16,180]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第2条测试用例，测试标题:正常加标---
+[2019-04-20 20:31:16,181]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Title': '正常加标', 'CaseId': 2, 'Params': "{'memberId':'1123889','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':3,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'Method': 'get', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Module': 'recharge', 'ExpectedResult': '{"status":0,"code":"20105","data":None,"msg":"不存在该会员"}'}
+[2019-04-20 20:31:16,472]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'data': None, 'code': '20105', 'msg': '不存在该会员', 'status': 0}
+[2019-04-20 20:31:16,474]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第3条测试用例，测试标题:审核到状态4---
+[2019-04-20 20:31:16,476]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Title': '审核到状态4', 'CaseId': 3, 'Params': "{'id':'loanid','status':4}", 'Method': 'get', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Module': 'recharge', 'ExpectedResult': '{"status":0,"code":"20212","data":None,"msg":"请根据数值参数的类型对应输入合法的数字"}'}
+[2019-04-20 20:31:16,745]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'data': None, 'code': '20212', 'msg': '请根据数值参数的类型对应输入合法的数字', 'status': 0}
+[2019-04-20 20:41:48,805]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第1条测试用例，测试标题:正常登录---
+[2019-04-20 20:41:48,809]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'CaseId': 1, 'Module': 'login', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Title': '正常登录', 'Params': "{'mobilephone':'18399999999','pwd':'123456'}", 'Method': 'get', 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"登录成功"}'}
+[2019-04-20 20:41:49,145]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'msg': '登录成功', 'status': 1, 'data': None, 'code': '10001'}
+[2019-04-20 20:41:49,148]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第2条测试用例，测试标题:正常加标---
+[2019-04-20 20:41:49,149]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'CaseId': 2, 'Module': 'recharge', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Title': '正常加标', 'Params': "{'memberId':'1123889','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':3,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'Method': 'get', 'ExpectedResult': '{"status":1,"code":"10001","data":null,"msg":"加标成功"}'}
+[2019-04-20 20:41:49,432]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第3条测试用例，测试标题:审核到状态4---
+[2019-04-20 20:41:49,434]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'CaseId': 3, 'Module': 'recharge', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Title': '审核到状态4', 'Params': "{'id':'1123889','status':4}", 'Method': 'get', 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}'}
+[2019-04-20 20:41:49,556]-[ERROR]-[my_log.py]-[python1]-[日志信息]：请求错误，错误是{'msg': '更新状态成功：竞标开始，当前标为竞标中状态', 'status': 1, 'data': None, 'code': '10001'} != {'msg': '不存在该项目', 'status': 1, 'data': None, 'code': '20206'}
+- {'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态', 'status': 1}
+?           ^  ^^                         ^^^^^^^^^^^^^^^^^^^^^
+
++ {'code': '20206', 'data': None, 'msg': '不存在该项目', 'status': 1}
+?           ^ + ^                         ^^^^^^
+
+[2019-04-20 20:43:43,625]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第1条测试用例，测试标题:正常登录---
+[2019-04-20 20:43:43,627]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Module': 'login', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': "{'mobilephone':'18399999999','pwd':'123456'}", 'CaseId': 1, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"登录成功"}', 'Method': 'get', 'Title': '正常登录'}
+[2019-04-20 20:43:44,026]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-04-20 20:43:44,029]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第2条测试用例，测试标题:正常加标---
+[2019-04-20 20:43:44,030]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Module': 'recharge', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Params': "{'memberId':'1123889','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':3,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}", 'CaseId': 2, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"加标成功"}', 'Method': 'get', 'Title': '正常加标'}
+[2019-04-20 20:43:44,170]-[ERROR]-[my_log.py]-[python1]-[日志信息]：请求错误，错误是{'status': 1, 'code': '10001', 'data': None, 'msg': '加标成功'} != {'status': 0, 'code': '20105', 'data': None, 'msg': '不存在该会员'}
+- {'code': '10001', 'data': None, 'msg': '加标成功', 'status': 1}
+?             ^^^                         ^^^^             ^
+
++ {'code': '20105', 'data': None, 'msg': '不存在该会员', 'status': 0}
+?           ++  ^                         ^^^^^^             ^
+
+[2019-04-20 20:43:44,370]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第3条测试用例，测试标题:审核到状态4---
+[2019-04-20 20:43:44,371]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Module': 'recharge', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Params': "{'id':'1123889','status':4}", 'CaseId': 3, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}', 'Method': 'get', 'Title': '审核到状态4'}
+[2019-04-20 20:43:44,486]-[ERROR]-[my_log.py]-[python1]-[日志信息]：请求错误，错误是{'status': 1, 'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态'} != {'status': 1, 'code': '20206', 'data': None, 'msg': '不存在该项目'}
+- {'code': '10001', 'data': None, 'msg': '更新状态成功：竞标开始，当前标为竞标中状态', 'status': 1}
+?           ^  ^^                         ^^^^^^^^^^^^^^^^^^^^^
+
++ {'code': '20206', 'data': None, 'msg': '不存在该项目', 'status': 1}
+?           ^ + ^                         ^^^^^^
+
+[2019-04-20 21:25:17,930]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第1条测试用例，测试标题:正常登录---
+[2019-04-20 21:25:17,933]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}", 'Module': 'login', 'CaseId': 1, 'Params': "{'mobilephone':'18688775656','pwd':'123456'}", 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'Title': '正常登录'}
+[2019-04-20 21:25:18,309]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 1, 'code': '10001', 'data': None, 'msg': '登录成功'}
+[2019-04-20 21:25:18,312]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试bidLoan模块，第2条测试用例，测试标题:正常投资---
+[2019-04-20 21:25:18,313]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'竞标成功'}", 'Module': 'bidLoan', 'CaseId': 2, 'Params': "{'memberId':'12956','password':'123456','loanId':17527,'amount':'10000'}", 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/bidLoan', 'Method': 'get', 'Title': '正常投资'}
+[2019-04-20 21:25:18,428]-[ERROR]-[my_log.py]-[python1]-[日志信息]：请求错误，错误是{'status': 1, 'code': '10001', 'data': None, 'msg': '竞标成功'} != {'status': 0, 'code': '11008', 'data': None, 'msg': '不存在该用户'}
+- {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^^^^             ^
+
++ {'code': '11008', 'data': None, 'msg': '不存在该用户', 'status': 0}
+?           +   ^                         ^^^^^^             ^
+
+[2019-04-20 21:25:18,600]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试bidLoan模块，第3条测试用例，测试标题:不输入金额---
+[2019-04-20 21:25:18,602]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'ExpectedResult': "{'status':0,'code':'11003','data': None,'msg':'参数错误:所有参数都不能为空'}", 'Module': 'bidLoan', 'CaseId': 3, 'Params': "{'memberId':'1123888','password':'123456','loanId':17527,'amount':''}", 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/bidLoan', 'Method': 'get', 'Title': '不输入金额'}
+[2019-04-20 21:25:18,905]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'status': 0, 'code': '11003', 'data': None, 'msg': '参数错误:所有参数都不能为空'}
+[2019-04-20 21:28:12,107]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第1条测试用例，测试标题:正常登录---
+[2019-04-20 21:28:12,111]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Module': 'login', 'Method': 'get', 'CaseId': 1, 'Title': '正常登录', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Params': "{'mobilephone':'18399999999','pwd':'123456'}", 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-04-20 21:28:12,437]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'data': None, 'code': '10001', 'status': 1, 'msg': '登录成功'}
+[2019-04-20 21:28:12,438]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试bidLoan模块，第2条测试用例，测试标题:正常投资---
+[2019-04-20 21:28:12,439]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Module': 'bidLoan', 'Method': 'get', 'CaseId': 2, 'Title': '正常投资', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/bidLoan', 'Params': "{'memberId':'1955','password':'123456','loanId':17527,'amount':'10000'}", 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'竞标成功'}"}
+[2019-04-20 21:28:12,566]-[ERROR]-[my_log.py]-[python1]-[日志信息]：请求错误，错误是{'data': None, 'code': '10001', 'status': 1, 'msg': '竞标成功'} != {'data': None, 'code': '11009', 'status': 0, 'msg': '不存在该标的'}
+- {'code': '10001', 'data': None, 'msg': '竞标成功', 'status': 1}
+?              ^^                         ^ ^^             ^
+
++ {'code': '11009', 'data': None, 'msg': '不存在该标的', 'status': 0}
+?           +   ^                         ^^^^ ^             ^
+
+[2019-04-20 21:28:12,752]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试bidLoan模块，第3条测试用例，测试标题:不输入金额---
+[2019-04-20 21:28:12,754]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Module': 'bidLoan', 'Method': 'get', 'CaseId': 3, 'Title': '不输入金额', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/bidLoan', 'Params': "{'memberId':'1123888','password':'123456','loanId':17527,'amount':''}", 'ExpectedResult': "{'status':0,'code':'11003','data': None,'msg':'参数错误:所有参数都不能为空'}"}
+[2019-04-20 21:28:13,076]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'data': None, 'code': '11003', 'status': 0, 'msg': '参数错误:所有参数都不能为空'}
+[2019-04-20 21:30:21,201]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第1条测试用例，测试标题:正常登录---
+[2019-04-20 21:30:21,203]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Module': 'login', 'Params': "{'mobilephone':'18399999999','pwd':'123456'}", 'Title': '正常登录', 'Method': 'get', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'CaseId': 1, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'登录成功'}"}
+[2019-04-20 21:30:21,525]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'data': None, 'msg': '登录成功', 'code': '10001', 'status': 1}
+[2019-04-20 21:30:21,526]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试bidLoan模块，第2条测试用例，测试标题:正常投资---
+[2019-04-20 21:30:21,528]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Module': 'bidLoan', 'Params': "{'memberId':'1955','password':'123456','loanId':82,'amount':'100'}", 'Title': '正常投资', 'Method': 'get', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/bidLoan', 'CaseId': 2, 'ExpectedResult': "{'status':1,'code':'10001','data': None,'msg':'竞标成功'}"}
+[2019-04-20 21:30:21,940]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'data': None, 'msg': '竞标成功', 'code': '10001', 'status': 1}
+[2019-04-20 21:30:21,942]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试bidLoan模块，第3条测试用例，测试标题:不输入金额---
+[2019-04-20 21:30:21,943]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Module': 'bidLoan', 'Params': "{'memberId':'1955','password':'123456','loanId':82,'amount':''}", 'Title': '不输入金额', 'Method': 'get', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/bidLoan', 'CaseId': 3, 'ExpectedResult': "{'status':0,'code':'11003','data': None,'msg':'参数错误:所有参数都不能为空'}"}
+[2019-04-20 21:30:22,242]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'data': None, 'msg': '参数错误:所有参数都不能为空', 'code': '11003', 'status': 0}
+[2019-04-21 12:03:44,997]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试login模块，第1条测试用例，测试标题:正常登录---
+[2019-04-21 12:03:45,002]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Title': '正常登录', 'Module': 'login', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/member/login', 'Method': 'get', 'CaseId': 1, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"登录成功"}', 'Params': "{'mobilephone':'18399999999','pwd':'123456'}"}
+[2019-04-21 12:03:45,353]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'msg': '登录成功', 'code': '10001', 'status': 1, 'data': None}
+[2019-04-21 12:03:45,355]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第2条测试用例，测试标题:正常加标---
+[2019-04-21 12:03:45,359]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Title': '正常加标', 'Module': 'recharge', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/add', 'Method': 'get', 'CaseId': 2, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"加标成功"}', 'Params': "{'memberId':'1955','title':'借钱修别墅啦','amount':100000,'loanRate':18.0,'loanTerm':3,'loanDateType':0,'repaymemtWay':5,'biddingDays':5}"}
+[2019-04-21 12:03:45,715]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'msg': '加标成功', 'code': '10001', 'status': 1, 'data': None}
+[2019-04-21 12:03:45,717]-[INFO]-[my_log.py]-[python1]-[日志信息]：---正在测试recharge模块，第3条测试用例，测试标题:审核到状态4---
+[2019-04-21 12:03:45,719]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试数据是{'Title': '审核到状态4', 'Module': 'recharge', 'URL': 'http://test.lemonban.com/futureloan/mvc/api/loan/audit', 'Method': 'get', 'CaseId': 3, 'ExpectedResult': '{"status":1,"code":"10001","data":None,"msg":"更新状态成功：竞标开始，当前标为竞标中状态"}', 'Params': "{'id':'74','status':4}"}
+[2019-04-21 12:03:46,108]-[INFO]-[my_log.py]-[python1]-[日志信息]：测试结果{'msg': '更新状态成功：竞标开始，当前标为竞标中状态', 'code': '10001', 'status': 1, 'data': None}

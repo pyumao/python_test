@@ -1,0 +1,38 @@
+test_001 (week_7.class_unittest_0301.class_unittest.TestAdd) ... FAIL
+test_002 (week_7.class_unittest_0301.class_unittest.TestAdd) ... FAIL
+test_003 (week_7.class_unittest_0301.class_unittest.TestAdd) ... FAIL
+
+======================================================================
+FAIL: test_001 (week_7.class_unittest_0301.class_unittest.TestAdd)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Administrator\python144\week_7\class_unittest_0301\class_unittest.py", line 35, in test_001
+    raise e
+  File "C:\Users\Administrator\python144\week_7\class_unittest_0301\class_unittest.py", line 32, in test_001
+    self.assertEqual(excepted,c)
+AssertionError: 4 != 3
+
+======================================================================
+FAIL: test_002 (week_7.class_unittest_0301.class_unittest.TestAdd)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Administrator\python144\week_7\class_unittest_0301\class_unittest.py", line 48, in test_002
+    raise e
+  File "C:\Users\Administrator\python144\week_7\class_unittest_0301\class_unittest.py", line 45, in test_002
+    self.assertEqual(excepted, c)
+AssertionError: -2 != -3
+
+======================================================================
+FAIL: test_003 (week_7.class_unittest_0301.class_unittest.TestAdd)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Administrator\python144\week_7\class_unittest_0301\class_unittest.py", line 61, in test_003
+    raise e
+  File "C:\Users\Administrator\python144\week_7\class_unittest_0301\class_unittest.py", line 58, in test_003
+    self.assertEqual(excepted, c)
+AssertionError: 2 != 1
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=3)
